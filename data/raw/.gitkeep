@@ -1,0 +1,12 @@
+import pandas as pd
+
+# URL of the CSV file
+url = 'https://raw.githubusercontent.com/4GeeksAcademy/logistic-regression-project-tutorial/main/bank-marketing-campaign-data.csv'
+
+# Read the CSV file from the URL and save it as a DataFrame
+df = pd.read_csv(url)
+
+# Save the DataFrame to a CSV file in your project directory
+df.to_csv('/Users/taylorclements/Desktop/Coding/ML_bank_work/data/raw/bank-marketing-campaign-data.csv', index=False)
+
+print("CSV file has been downloaded and saved as a DataFrame.")
